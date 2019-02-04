@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>javascript tip calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="main">
+      <div id="logo">
+     <h1>tip calculator</h1>
+      </div>
+      <div id="billContainer">
+        <label>bill</label>
+        <input type="text" placeholder="total amount" id="totalBill">
+      </div>
+      <div>
+        <label >tip percentage</label>
+        <input type="range" value="0" id="percentage">
+        <span id="percentageIndicator"></span>
+      </div>
+      <div>
+        <label>clients number</label>
+        <input type="range" min="1" max="15" value="1" id="clients">
+        <span id="number"></span>
+      </div>
+      <div>
+        <label>total amount for each</label><sup>$</sup><span id="newAmount">0</span>
+      </div>
+      <div>
+        <label>tip amount</label><sup>$</sup><span id="tipTotal">0</span>
+      </div>
+      <div>
+        <label>for each</label><sup>$</sup><span id="each">0</span>
+      </div>
+    </div>
+    <script src="App.js"></script>
+  </body>
+</html>
